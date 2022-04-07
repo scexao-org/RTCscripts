@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ARCHDIR="calibs/$1"
+
+mkdir -p ${ARCHDIR}
+
+cp vispyr/fps.compfCM-0.datadir/mkmodestmp/fmodesWFSall.fits ${ARCHDIR}/aol0_modesWFS.fits
+cp vispyr/fps.compfCM-0.datadir/mkmodestmp/fmodesall.fits ${ARCHDIR}/aol0_DMmodes.fits
+
+cp vispyr/fps.acqlin_zRM-0.datadir/wfsref_mn.fits ${ARCHDIR}/aol0_wfsref.fits
+cp vispyr/fps.acqlin_zRM-0.datadir/wfsmask_mkm.fits ${ARCHDIR}/aol0_wfsmask.fits
+cp vispyr/fps.acqlin_zRM-0.datadir/wfsmap.fits ${ARCHDIR}/aol0_wfsmap.fits
+
+cp vispyr/fps.acqlin_zRM-0.datadir/dmmask_mkm.fits ${ARCHDIR}/aol0_dmmask.fits
+cp vispyr/fps.acqlin_zRM-0.datadir/dmslaved.fits ${ARCHDIR}/aol0_dmslaved.fits
+
+cp vispyr/fps.acqlin_zRM-0.datadir/zrespM.fits ${ARCHDIR}/aol0_zrespM.fits
+
+
+cp vispyr/fps.acqlin_loRM-0.datadir/respM.fits ${ARCHDIR}/aol0_LOrespM.fits
+cp vispyr/fps.acqlin_loRM-0.datadir/RMpokeCube.fits ${ARCHDIR}/aol0_LODMmodes.fits
+
+
+
